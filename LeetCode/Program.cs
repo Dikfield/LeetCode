@@ -3,5 +3,10 @@
 using LeetCode;
 
 
-Console.WriteLine(CountNegativeNumbersInaSortedMatrix.CountNegativeNumbersInaSortedMatrix1(new int[][] {new int[] { 5,1,0 }, new int[] {-5,-5,-5 }}));
+int[] ans = IntersectionOfTwoArraysII.Intersect(new int[] { 1}, new int[] { 1,2 });
+
+foreach(var item in ans)
+{
+    Console.Write(item);
+}
 
