@@ -1,7 +1,22 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
+using BubbleSort;
 using LeetCode;
 
+var treeNode = new TreeNode<int>(7);
 
-Console.WriteLine(CoutingWordsWithGivenPrefix.CoutingWords(new string[] { "wunidp", "wunioog", "wuniz", "wuniczgh", "wunialih", "wunior", "yzbu", "wunijum", "wuninut", "wuniuoi", "rjn", "wuniexzl", "wunizqp", "wunifsy", "wunia", "wunisvi", "vbirvcg", "wunie", "srs", "wunirzv", "wunil", "wunih", "wunimslv", "wunin", "wunim", "wunirjth", "bpivordjku", "heca", "wuniw", "trpgugh", "wunic", "yyjvvgxk", "wuniosq", "onmzvn", "wunijreyi", "wunimkof", "wunivro", "wunizwt", "wunicat", "wunifjiqr", "hlduh", "wunicau", "kzuhqme", "wuniervj", "gaopnn", "wuniydge", "wuniv", "wunifewvf", "wunidhws", "wuniwzanh", "wunicb", "wuniwbf", "wunimall", "wunibqscee", "wunisabfvl", "krcssqmw", "wunip", "nbxe", "wuniatokw", "wunixf", "wunit", "wuniejvbec", "wuniqtw", "wuniwtp", "wunirg" }, "wuni"));
+treeNode.Insert(4);
+treeNode.Insert(3);
+treeNode.Insert(6);
+treeNode.Insert(19);
+
+Console.WriteLine(treeNode.Min());
+
+Console.WriteLine(treeNode.Max());
+
+
+
+var ans = FindACorrespondingNodeOfABinaryTreeInACloneOfThatTree.FindCorrespondingNode(treeNode, 3);
+
+Console.WriteLine(ans.Value);
 
