@@ -3,20 +3,23 @@
 using BubbleSort;
 using LeetCode;
 
-var treeNode = new TreeNode<int>(7);
+var root1 = new Bst<int>();
+var root2 = new Bst<int>();
 
-treeNode.Insert(4);
-treeNode.Insert(3);
-treeNode.Insert(6);
-treeNode.Insert(19);
-
-Console.WriteLine(treeNode.Min());
-
-Console.WriteLine(treeNode.Max());
-
+root1.Insert(1);
+root1.Insert(2);
+root1.Insert(4);
+root2.Insert(0);
+root2.Insert(1);
+root2.Insert(3);
 
 
-var ans = FindACorrespondingNodeOfABinaryTreeInACloneOfThatTree.FindCorrespondingNode(treeNode, 3);
+var ans = AllElementsInTwoBinarySearchTrees.GetAllElements(root1, root2).OrderBy(a=>a);
 
-Console.WriteLine(ans.Value);
+foreach (var element in ans)
+{
+    Console.WriteLine(element);
+}
+
+Console.ReadLine();
 
