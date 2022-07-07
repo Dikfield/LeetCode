@@ -9,29 +9,27 @@ namespace LeetCode
 {
     public static class AllElementsInTwoBinarySearchTrees
     {
-        public static IList<int> GetAll = new List<int>();
-
-        public static IList<int> GetAllElements(Bst<int> root1, Bst<int> root2)
+        
+        public static IList<int> GetAllElements(TreeNode<int> root1, TreeNode<int> root2)
         {
-                        
-            GetElements(root1, root2);
-            
-            return GetAll;
+            List<int> getAll = new List<int>();
+
+            TraverseInOrder(root1, getAll);
+            TraverseInOrder(root2, getAll);
+
+            getAll.Sort();
+
+            return getAll;
         }
-
-        public static void GetElements(Bst<int> a, Bst<int> b)
+        public static void TraverseInOrder(TreeNode<int> root, List<int> getAll)
         {
-            var numbers = a.TraverseInOrder();
-            var numbers2 = b.TraverseInOrder();
-            foreach(var number in numbers)
-            {
-                GetAll.Add(number);
-            }
+            if (root == null)
+                return;
 
-            foreach (var number in numbers2)
-            {
-                GetAll.Add(number);
-            }
+            TraverseInOrder(root.Left, getAll);
+            getAll.Add(root.Value);
+            TraverseInOrder(root.Right, getAll);
+
         }
     }
 }

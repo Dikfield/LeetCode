@@ -16,6 +16,10 @@ namespace BubbleSort
         {
             Value = value;
         }
+        public TreeNode()
+        {
+
+        }
 
         public void Insert(T newValue)
         {
