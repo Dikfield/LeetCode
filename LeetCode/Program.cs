@@ -3,19 +3,22 @@
 using BubbleSort;
 using LeetCode;
 
-var root1 = new TreeNode<int>(10);
+//var root1 = new TreeNode<int>(1);
 
-root1.Insert(4);
-root1.Insert(6);
+//root1.Insert(2);
+//root1.Insert(3);
+//root1.Insert(4);
+//root1.Insert(5);
+//root1.Insert(6);
+//root1.Insert(7);
+//root1.Insert(8);
 
 
+//int ans = DeepestLeavesSum.DeepestLeaves(root1);
 
-var ans = RootEqualsSumOfChildren.CheckTree(root1);
+//Console.WriteLine(ans);
 
-if(ans == true)
-    Console.WriteLine("certo");
-else
-    Console.WriteLine("errado");
+Console.WriteLine(LongestCommonPrefix.LongestCommonPref(new string[] {"flower", "flow", "flight"}));
 
 
 Console.ReadLine();
