@@ -18,7 +18,10 @@ using LeetCode;
 
 //Console.WriteLine(ans);
 
-Console.WriteLine(LongestCommonPrefix.LongestCommonPref(new string[] {"flower", "flow", "flight"}));
+
+Console.WriteLine(MaximumAverageSubarrayI.FindMaxAverage(new int[] { 2,2,3,3,5,6,5 }, 4));
+
+
 
 
 Console.ReadLine();
