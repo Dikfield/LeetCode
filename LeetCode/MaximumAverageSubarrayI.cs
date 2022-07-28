@@ -10,9 +10,17 @@ namespace LeetCode
     {
         public static double FindMaxAverage(int[] nums, int k)
         {
+            int currentSum = 0;
+            int sum = 0;
 
+            for(int i =0; i<nums.Length-k;i++)
+            {
+                currentSum = nums.Take(k).Sum() - i * nums[i];
+            }
 
-            return nums.Take(k).Sum();
+            return 0;
+
+            
         }
     }
 }

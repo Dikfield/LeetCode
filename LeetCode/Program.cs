@@ -18,8 +18,16 @@ using LeetCode;
 
 //Console.WriteLine(ans);
 
+var array = OccurrencerAfterBigram.FindOcurrences("we will we will rock you", "we", "will");
 
-Console.WriteLine(MaximumAverageSubarrayI.FindMaxAverage(new int[] { 2,2,3,3,5,6,5 }, 4));
+foreach(var item in array)
+{
+    Console.WriteLine(item);
+}
+
+
+
+
 
 
 
